@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="25dp"
+        android:text="Restaurant Congestion"
+        android:background="@null"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:fontFamily="@font/title"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="회원 가입"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:text="이메일"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:gravity="" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="이메일을 입력하세요"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:text="비밀번호"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:gravity="" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="비밀번호를 입력하세요"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:text="비밀번호 확인"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:gravity="" />
+
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:hint="비밀번호를 다시 입력하세요"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="170dp">
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:textColor="#ffffff"
+            android:backgroundTint="#000000"
+            android:textSize="18sp"
+            android:elevation="4dp"
+            android:layout_weight="0"/>
+    </LinearLayout>
+
+</LinearLayout>

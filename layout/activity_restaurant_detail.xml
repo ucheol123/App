@@ -1,0 +1,38 @@
+<!-- res/layout/activity_restaurant_detail.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="25dp"
+        android:text="Restaurant Congestion"
+        android:background="@null"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:fontFamily="@font/title"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <ImageView
+        android:id="@+id/imageViewRestaurantDetail"
+        android:layout_width="382dp"
+        android:layout_height="350dp"
+        android:src="@drawable/default_image"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="8dp"/>
+
+
+    <!-- ComposeView 추가 -->
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/composeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
